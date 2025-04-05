@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy, sans-serif;
+}
+
+:root {
+    --header-height: 100px;
+    --footer-height: 50px;
+    --content-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+header {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header #title {
+    font-size: 4em;
+}
+
+nav>button {
+    height: 100%;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(38, 93%, 71%);
+}
+
+nav>button:hover {
+    background-color: hsl(38, 93%, 61%);
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(6, 93%, 71%);
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    height: var(--content-height);
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    height: var(--footer-height);
+    align-items: center;
+}
+
+/* homepage */
+
+img.chef {
+    height: 200px;
+    width: 200px;
+}
+
+/* menu */
+
+.menu-container .card img {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-container>div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.menu-container .card {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 250px;
+    width: 200px;
+    background-color: hsl(40, 93%, 71%);
+}
+
+/* about */
+img.sous {
+    height: 500px;
+    width: 500px;
+}
